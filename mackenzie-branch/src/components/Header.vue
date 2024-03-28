@@ -1,0 +1,88 @@
+<script setup>
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { faGithub } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
+</script>
+<template>
+  <div class="header-wrapper">
+    <div class="slideshow-container">
+      <div class="mySlides fade">
+        <img class="me-img" src="../assets/images/me.jpg">
+      </div>
+      <div class="mySlides fade">
+        <img class="me-img" src="../assets/images/Avatar.png">
+      </div>
+      <div class="mySlides fade">
+        <img class="me-img" src="../assets/images/bitmoji.png">
+      </div>
+      <div class="mySlides fade">
+        <img class="me-img" src="../assets/images/duolingoicon.png">
+      </div>
+    </div>
+    <div class="header-title">
+      <h1>Mackenzie Branch <a class="header-icon" href="https://github.com/mackbra" target="_blank"><FontAwesomeIcon :icon="faGithub" /></a><a class="header-icon" href="https://linkedin.com/in/mackenzie-branch" target="_blank"><FontAwesomeIcon :icon="faLinkedin" /></a></h1>
+    </div>
+  </div>
+</template>
+
+<style scoped>
+.header-wrapper {
+  display:grid;
+  padding-top:50px;
+  grid-template-columns: 150px 800px;
+  justify-content: center;
+}
+.header-wrapper > div {
+  text-align: center;
+  padding: 20px 0;
+  font-size: 30px;
+}
+header {
+  position:fixed;
+  top: 0;
+  left: 0;
+  width:100%;
+}
+h1 {
+  text-align: left;
+  font-family: "Caveat", cursive;
+  font-optical-sizing: auto;
+  font-weight: 700;
+  font-style: normal;
+  margin-top:10px;
+  padding-left:10px;
+  border-bottom: 2px solid #b2d5ba;
+  color:#645567 ;
+}
+.header-icon {
+  font-size:.4em;
+}
+.me-img {
+  width:150px;
+  height:150px; border: 3px solid #b2d5ba;
+  border-radius: 50px 20px;
+}
+/* Slideshow container */
+.slideshow-container {
+  width:150px;
+  position: relative;
+}
+
+/* Hide the images by default */
+.mySlides {
+  width:150px;
+  display: none;
+}
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 2.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+</style>

@@ -1,0 +1,18 @@
+@import './base.css';
+body {
+  width:100%;
+  background-color: whitesmoke;
+}
+.app {
+  width:100%;
+}
+a {
+  text-decoration: none;
+  color: #645567;
+  transition: 0.4s;
+  padding: 3px;
+}
+a:hover {
+  color: #0D0107;
+}
+
