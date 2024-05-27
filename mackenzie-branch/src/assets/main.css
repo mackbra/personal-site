@@ -25,3 +25,12 @@ p {
 .active {
   font-size:2em;
 }
+
+.portfolioLink {
+  color:#645567;
+  border-bottom: 2px dashed
+}
+
+.portfolioLink:hover {
+  background-color: rgb(13,1,7,.1);
+}

@@ -32,7 +32,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
   grid-template-columns: 150px 800px;
   justify-content: center;
   position:fixed;
-  z-index: 1; /* Stay on top */
+  z-index: 100; /* Stay on top */
   top: 0;
   left: 0;
   margin:auto;
