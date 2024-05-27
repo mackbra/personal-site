@@ -5,7 +5,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 </script>
 <template>
       <div class="skills-wrapper">
-        <div class="first-set">
+        <div class="first-set set-container">
           <span class="container">
             <img src="../assets/icons/icons8-html-5.svg" alt="HTML-5" loading="lazy" class="icon icon-card"/>
             <div class="overlay">
@@ -79,11 +79,6 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
   .skills-wrapper img {
     padding: 1.25rem;
   }
-
-  .icon {
-    width: 11.875rem;
-    height: 11.25rem;
-  }
   .icon-card {
     background-color: #fff;
     border-radius: 11px;
@@ -134,4 +129,21 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
   transform: translate(-50%, -50%);
   text-align: center;
 }
+
+@media (min-width: 1000px) {
+    .icon {
+      width: 11.875rem;
+      height: 11.25rem;
+    }
+  }
+  @media (max-width: 999px) {
+    .icon {
+      width: 6.875rem;
+      height: 6.25rem;
+      margin: 10%;
+    }
+    .set-container {
+      justify-content: center;
+    }
+  }
 </style>

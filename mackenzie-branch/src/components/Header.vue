@@ -19,17 +19,16 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
         <img class="me-img" src="../assets/images/duolingoicon.png">
       </div>
     </div>
-    <div class="header-title">
-      <h1>Mackenzie Branch <a class="header-icon" href="https://github.com/mackbra" target="_blank"><FontAwesomeIcon :icon="faGithub" /></a><a class="header-icon" href="https://linkedin.com/in/mackenzie-branch" target="_blank"><FontAwesomeIcon :icon="faLinkedin" /></a></h1>
-    </div>
+    <span class="header-title">
+      <h1>Mackenzie Branch 
+        <a class="header-icon" href="https://github.com/mackbra" target="_blank"><FontAwesomeIcon :icon="faGithub" /></a>
+        <a class="header-icon" href="https://linkedin.com/in/mackenzie-branch" target="_blank"><FontAwesomeIcon :icon="faLinkedin" /></a></h1>
+    </span>
   </div>
 </template>
 
 <style scoped>
 .header-wrapper {
-  display:grid;
-  padding-top:50px;
-  grid-template-columns: 150px 800px;
   justify-content: center;
   position:fixed;
   z-index: 100; /* Stay on top */
@@ -40,11 +39,11 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
   background-color: whitesmoke;
   box-shadow: 10px 10px 15px 12px whitesmoke;
 }
-.header-wrapper > div {
-  text-align: center;
-  padding: 20px 0;
-  font-size: 30px;
-}
+.header-wrapper > span {
+    text-align: center;
+    padding: 20px 0;
+    margin: 0 auto;
+  }
 header {
   position:fixed;
   top: 0;
@@ -53,7 +52,6 @@ header {
   width:100%;
 }
 h1 {
-  text-align: left;
   font-family: "Caveat", cursive;
   font-optical-sizing: auto;
   font-weight: 700;
@@ -94,5 +92,34 @@ h1 {
   to {opacity: 1}
 }
 
+@media (min-width: 1000px) {
+    .header-wrapper {
+    display:grid;
+    padding-top:50px;
+    grid-template-columns: 150px 800px;
+  }
+  .header-wrapper > span {
+    padding: 20px 0;
+    font-size: 30px;
+  }
+  h1 {
+  text-align: left;
+  }
+}
 
+@media (max-width: 999px) {
+    .header-wrapper {
+    position:fixed;
+  }
+  .header-wrapper > span {
+    padding: 20px 0;
+    font-size: 20px;
+  }
+  .slideshow-container {
+    margin: 80px auto 0px;
+  }
+  .header-icon {
+    font-size:.8em;
+  }
+}
 </style>

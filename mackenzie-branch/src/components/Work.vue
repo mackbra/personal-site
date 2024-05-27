@@ -61,14 +61,6 @@
 
 <script>
 export default {
-  data() {
-    return {
-      about: false,
-      skills: false,
-      work: false,
-    }
-  },
-
   methods: {
     open_in_new_window(id, new_page_title, features) {
       var new_window;
@@ -91,15 +83,11 @@ export default {
 
 <style scoped>
   .work-wrapper {
-  position: relative;
-    height: 300px;
-    width: 100%;
+    position: relative;
     background-color: #fff;
     border-radius: 11px;
     box-shadow: 0 3px 10px lightgray;
     margin: 10px;
-    overflow:hidden;
-
   }
 
 .image {
@@ -108,13 +96,39 @@ export default {
   height: 300px;
   transition: 1s ease;
 }
-.work-img-wrapper {
-  z-index: 100; /* Stay on top */
-  width: 33%;
-  height:300px;
-  overflow:hidden;
-  transition: 1s ease;
+
+.work-wrapper:hover .overlay {
+  opacity: 1;
 }
+
+[data-new-window] {
+    display: none;
+}
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent; /* make scrollbar transparent */
+}
+
+@media (min-width: 1000px) {
+  .work-wrapper {
+    position: relative;
+    height: 300px;
+    width: 100%;
+    overflow:scroll;
+  }
+  .work-img-wrapper {
+    z-index: 100; /* Stay on top */
+    width: 33%;
+    height:300px;
+    overflow:hidden;
+    transition: 1s ease;
+  }
+  
+  .work-img-wrapper:hover {
+    width: 100%;
+    position:absolute;
+  }
+  
 .overlay {
     width: 67%;
     position: absolute;
@@ -123,14 +137,6 @@ export default {
     top: 0%;
     left: 33%;
 }
-.work-img-wrapper:hover {
-  width: 100%;
-  position:absolute;
-}
-.work-wrapper:hover .overlay {
-  opacity: 1;
-}
-
 .text {
     position: absolute;
     padding: 10px 20px 10px 10px;
@@ -142,11 +148,28 @@ export default {
   margin-top: 15px;
   padding-right:20px;
 }
-[data-new-window] {
-    display: none;
 }
-::-webkit-scrollbar {
-    width: 0px;
-    background: transparent; /* make scrollbar transparent */
+  @media (max-width: 999px) {
+  .work-wrapper {
+    position: relative;
+    width: 100%;
+    height:auto;
+    margin:40px auto;
+  }
+  .work-img-wrapper {
+  z-index: 100; /* Stay on top */
+  width: 100%;
+  transition: 1s ease;
+  overflow:hidden;
+  }
+  .image {
+    width:100%;
+    height:auto;
+    border-radius: 11px 11px 0px 0px;
+  }
+.text {
+    padding: 10px 20px 10px 10px;
 }
+  }
+
 </style>

@@ -43,26 +43,13 @@ export default {
 }
 </script>
 <style scoped>
-html {
-		scroll-behavior: smooth;
-	}
-  .wrapper {
-    width:75%;
-    margin:auto;
-  }
-  .body-wrapper {
-    margin-left:200px;
-  }
-  #About {
-    margin-top:300px;
-  }
+  html {
+      scroll-behavior: smooth;
+    }
   #Skills {
     margin: 0 auto;
     display:grid;
     justify-content: center;
-  }
-  .post {
-    margin: 100px auto;
   }
   h1 {
     font-family: "Caveat", cursive;
@@ -73,5 +60,31 @@ html {
     justify-content: center;
     margin: 20px auto;
     color: #645567;
+  }
+  @media (min-width: 1000px) {
+    .wrapper {
+      width:75%;
+      margin:auto;
+    }
+    .body-wrapper {
+      margin-left:200px;
+    }
+    #About {
+      margin-top:300px;
+    }
+    .post {
+      margin: 100px auto;
+    }
+  }
+  @media (max-width: 999px) {
+    .body-wrapper {
+      margin: auto 7%;
+    }
+    #About {
+      margin-top:350px;
+    }
+    .post {
+      margin:30px auto;
+    }
   }
 </style>
