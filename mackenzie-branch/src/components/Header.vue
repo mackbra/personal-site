@@ -31,6 +31,14 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
   padding-top:50px;
   grid-template-columns: 150px 800px;
   justify-content: center;
+  position:fixed;
+  z-index: 1; /* Stay on top */
+  top: 0;
+  left: 0;
+  margin:auto;
+  width: 100%;
+  background-color: whitesmoke;
+  box-shadow: 10px 10px 15px 12px whitesmoke;
 }
 .header-wrapper > div {
   text-align: center;
@@ -41,6 +49,7 @@ header {
   position:fixed;
   top: 0;
   left: 0;
+  height:280px;
   width:100%;
 }
 h1 {
@@ -59,7 +68,8 @@ h1 {
 }
 .me-img {
   width:150px;
-  height:150px; border: 3px solid #b2d5ba;
+  height:150px;
+  border: 3px solid #b2d5ba;
   border-radius: 50px 20px;
 }
 /* Slideshow container */

@@ -16,3 +16,12 @@ a:hover {
   color: #0D0107;
 }
 
+
+p {
+  margin: 20px auto;
+  font-size:1.3em;
+}
+
+.active {
+  font-size:2em;
+}

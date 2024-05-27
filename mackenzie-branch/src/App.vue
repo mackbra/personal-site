@@ -1,7 +1,9 @@
 <script setup>
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
 import Header from './components/Header.vue'
+import SideNav from './components/SideNav.vue'
+import About from './components/About.vue'
+import Skills from './components/Skills.vue'
+import Work from './components/Work.vue'
 </script>
 
 <template>
@@ -11,12 +13,65 @@ import Header from './components/Header.vue'
 
   <main>
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    <TheWelcome />
+      <SideNav :about="about" :skills="skills" :work="work" />
+      <div class="body-wrapper">
+        <div id="About" class="post" @mouseover="about = true, skills = false, work = false">
+          <h1>Get to Know Me</h1>
+          <About />
+        </div>
+        <div id="Skills" class="post" @mouseover="about = false, skills = true, work = false">
+          <h1>Some of My Skills</h1>
+          <Skills />
+        </div>
+        <div id="Work" class="post" @mouseover="about = false, skills = false, work = true">
+          <h1>My Recent Work</h1>
+          <Work />
+        </div>
+      </div>
     </div>
   </main>
 </template>
-
+<script>
+export default {
+  data() {
+    return {
+      about: false,
+      skills: false,
+      work: false,
+    }
+  },
+}
+</script>
 <style scoped>
-
+html {
+		scroll-behavior: smooth;
+	}
+  .wrapper {
+    width:75%;
+    margin:auto;
+  }
+  .body-wrapper {
+    margin-left:200px;
+  }
+  #About {
+    margin-top:300px;
+  }
+  #Skills {
+    margin: 0 auto;
+    display:grid;
+    justify-content: center;
+  }
+  .post {
+    margin: 100px auto;
+  }
+  h1 {
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    display:grid;
+    justify-content: center;
+    margin: 20px auto;
+    color: #645567;
+  }
 </style>
