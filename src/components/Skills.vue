@@ -76,16 +76,7 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
   .skills-wrapper {
     justify-content: center;
   }
-  .skills-wrapper img {
-    padding: 1.25rem;
-  }
-  .icon-card {
-    background-color: #fff;
-    border-radius: 11px;
-    box-shadow: 0 3px 10px lightgray;
-    padding: 20px;
-    margin: 10px;
-  }
+
   .container {
   position: relative;
   width: 50%;
@@ -135,6 +126,16 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
       width: 11.875rem;
       height: 11.25rem;
     }
+    .skills-wrapper img {
+    padding: 1.25rem;
+  }
+  .icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px lightgray;
+    padding: 20px;
+    margin: 10px;
+  }
   }
   @media (max-width: 999px) {
     .icon {
@@ -144,6 +145,20 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
     }
     .set-container {
       justify-content: center;
-    }
+    }  
+    .icon-card {
+    background-color: #fff;
+    border-radius: 11px;
+    box-shadow: 0 3px 10px lightgray;
+    padding: 10px;
+    margin: 10px;
+  }
+  .first-set {
+    justify-content: center;
+    padding: 0px 12%;
+  }
+  .second-set {
+    padding: 0px 12%;
+  }
   }
 </style>

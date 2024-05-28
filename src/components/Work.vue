@@ -114,7 +114,7 @@ export default {
     position: relative;
     height: 300px;
     width: 100%;
-    overflow:scroll;
+    overflow:hidden;
   }
   .work-img-wrapper {
     z-index: 100; /* Stay on top */
