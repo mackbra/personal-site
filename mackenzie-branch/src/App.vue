@@ -1,9 +1,9 @@
 <script setup>
-import Header from './components/Header.vue'
-import SideNav from './components/SideNav.vue'
-import About from './components/About.vue'
-import Skills from './components/Skills.vue'
-import Work from './components/Work.vue'
+import Header from 'components/Header.vue'
+import SideNav from 'components/SideNav.vue'
+import About from 'components/About.vue'
+import Skills from 'components/Skills.vue'
+import Work from 'components/Work.vue'
 </script>
 
 <template>
