@@ -2,7 +2,7 @@
     <div class="work-wrapper">
         <div class="work-img-wrapper">
           <img
-            src="../assets/images/Esoteria.PNG"
+            src="../assets/images/Esoteria.png"
             alt=""
             loading="lazy"
             class="image"
@@ -36,7 +36,7 @@
     <div class="work-wrapper">
         <div class="work-img-wrapper">
           <img
-            src="../assets/images/Phonebook.PNG"
+            src="../assets/images/Phonebook.png"
             alt=""
             loading="lazy"
             class="image"
