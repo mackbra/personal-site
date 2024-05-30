@@ -34,9 +34,9 @@ import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 
         <div class="second-set">
           <span class="container">
-            <img src="../assets/icons/icons8-visual-studio-code.svg" alt="VS Code" loading="lazy" class="icon icon-card" />
+            <img src="../assets/icons/icons8-mysql.svg" alt="MySQL" loading="lazy" class="icon icon-card" />
             <div class="overlay">
-              <div class="text">VS Code</div>
+              <div class="text">MySQL</div>
             </div>
           </span>
           <span class="container">
