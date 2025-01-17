@@ -13,7 +13,7 @@
               Esoteria is a personal project I’ve been working on in my free time with some of my former colleagues. Our vision is to create a website for people who want to learn how to use tarot cards. My main contributions to the website have been creating the header and footer and the moon calendar. The header features a dynamic moon icon that changes with the current lunar phase. The moon calendar shows the moon phases for the next seven days and when clicked on a user can read about how the lunar phase affects the tarot readings.
               <br/>
               <span class="learnMore">
-                This project is currently under construction and is not public, however you can <a class="portfolioLink" target="_blank" href="https://github.com/joshuavickstrom/TarotWebapp">visit our code</a> and view how we collaborate and manage a project through github.
+                <a class="porfolioLink" target="_blank" href="https://lilicecilia23.github.io/Esoteria/">View our work in progress</a> or if you'd like you can <a class="portfolioLink" target="_blank" href="https://github.com/joshuavickstrom/TarotWebapp">visit our code</a> and view how we collaborate and manage a project through github.
               </span>
           </div>
         </div>
